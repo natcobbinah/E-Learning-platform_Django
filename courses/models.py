@@ -49,7 +49,7 @@ class Module(models.Model):
         ordering = ['order']
 
     def __str__(self):
-        return str(self.order, self.title)
+        return f'{self.order}. {self.title}'
 
 
 class Content(models.Model):
