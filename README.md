@@ -24,6 +24,12 @@ An e-learning platform with its own content management system (CMS).
 ```
 
 ## Sample screenshot of working application#
+HomePage 
+![public view for course information](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/7563495d-7644-4322-80ce-f86272b81295)
+
+sample course overview page
+![public view for course information two](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/21e322f4-4837-499a-89ed-f402bf499255)
+
 My course page
 ![my course page](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/c93ab197-0d6a-41b5-a9f2-fc926d9c85d8)
 
