@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 from environs import Env
+from django.urls import reverse_lazy
 
 env = Env()
 env.read_env()
@@ -43,6 +44,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # local,
     "courses.apps.CoursesConfig",
+    "students.apps.StudentsConfig",
+    # 3rd party,
+    "embed_video",
 ]
 
 MIDDLEWARE = [
@@ -129,6 +133,9 @@ MEDIA_ROOT = BASE_DIR / 'media'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# after successful student login
+LOGIN_REDIRECT_URL = reverse_lazy('student_course_list')
 
 
 # Default primary key field type
