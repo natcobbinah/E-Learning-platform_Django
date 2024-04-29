@@ -51,7 +51,10 @@ Manage modules with draggable feature enabled
 Manage module contents with draggable featured enabled
 ![draggable module contents](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/9d80074b-792f-48d7-b064-71659800f46b)
 
+Enrolled course page of a student
+![enrolled course1](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/86145f34-08ad-4b09-9047-926a6078c203)
 
+![enrolled course 2](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/0c094b55-415f-45bd-b99c-555837820c3b)
 
 
 
