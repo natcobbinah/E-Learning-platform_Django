@@ -10,15 +10,16 @@ An e-learning platform with its own content management system (CMS).
 • Order course contents and modules
 • Build authentication views for the CMS
 
-• Create a content management system using class-based views and mixins...in progress
-• Build formsets and model formsets to edit course modules and module contents...in progress
-• Manage groups and permissions...in progress
-• Implement a drag-and-drop functionality to reorder modules and content...in progress
+• Create a content management system using class-based views and mixins
+• Build formsets and model formsets to edit course modules and module contents
+• Manage groups and permissions
+• Implement a drag-and-drop functionality to reorder modules and content
 
 • Create public views for displaying course information
 • Build a student registration system•Manage student enrollment onto courses
 • Render diverse content for course modules
-• Install and configure Memcached•Cache content using the Django cache framework
+• Install and configure Memcached
+• Cache content using the Django cache framework
 • Use the Memcached and Redis cache backends
 • Monitor your Redis server in the Django administration site
 ```
