@@ -68,5 +68,10 @@ Enrolled course page of a student
 
 ![enrolled course 2](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/0c094b55-415f-45bd-b99c-555837820c3b)
 
+REST API VIEWS 
+Subject list view 
+![subject apiviews](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/9f757ccc-0542-4f22-875d-7c44f2bc698b)
 
+Subject detail view
+![subject detail view](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/ce192921-476f-4ef0-a832-a88677befd85)
 
