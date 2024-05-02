@@ -33,7 +33,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INTERNAL_IPS = [
-    '127.0.0.1',
+    "127.0.0.1",
 ]
 
 # Application definition
@@ -51,8 +51,8 @@ INSTALLED_APPS = [
     # 3rd party,
     "embed_video",
     "debug_toolbar",
-    'redisboard',
-
+    "redisboard",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -89,6 +89,16 @@ TEMPLATES = [
 WSGI_APPLICATION = "elearning.wsgi.application"
 
 
+# Django Rest Framework
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+
+
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -98,15 +108,13 @@ WSGI_APPLICATION = "elearning.wsgi.application"
         "NAME": BASE_DIR / "db.sqlite3",
     }
 } """
-DATABASES = {
-    "default": env.dj_db_url("DATABASE_URL")
-}
+DATABASES = {"default": env.dj_db_url("DATABASE_URL")}
 
 # using rediscache
 CACHES = {
     "default": {
-        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION': 'redis://127.0.0.1:6379',
+        "BACKEND": "django.core.cache.backends.redis.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379",
     }
 }
 
@@ -119,9 +127,9 @@ CACHES = {
 } """
 
 # configuring per site cache
-CACHE_MIDDLEWARE_ALIAS = 'default'
+CACHE_MIDDLEWARE_ALIAS = "default"
 CACHE_MIDDLEWARE_SECONDS = 60 * 15  # 15 minutes
-CACHE_MIDDLEWARE_KEY_PREFIX = 'educa'
+CACHE_MIDDLEWARE_KEY_PREFIX = "educa"
 
 
 # Password validation
@@ -155,18 +163,18 @@ USE_I18N = True
 USE_TZ = True
 
 # MEDIA FILES
-MEDIA_URL = 'media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = "media/"
+MEDIA_ROOT = BASE_DIR / "media"
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # after successful student login
-LOGIN_REDIRECT_URL = reverse_lazy('student_course_list')
+LOGIN_REDIRECT_URL = reverse_lazy("student_course_list")
 
 
 # Default primary key field type

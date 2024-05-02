@@ -22,6 +22,17 @@ An e-learning platform with its own content management system (CMS).
 • Cache content using the Django cache framework
 • Use the Memcached and Redis cache backends
 • Monitor your Redis server in the Django administration site
+
+• Install Django REST framework
+• Create serializers for your models
+• Build a RESTful API
+• Create nested serializers
+• Build custom API views
+• Handle API authentication
+• Add permissions to API views
+• Create a custom permission
+• Implement ViewSets and routers
+• Use the Requests library to consume the API 
 ```
 
 ## Sample screenshot of working application#
