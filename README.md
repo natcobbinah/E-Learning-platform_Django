@@ -33,6 +33,13 @@ An e-learning platform with its own content management system (CMS).
 • Create a custom permission
 • Implement ViewSets and routers
 • Use the Requests library to consume the API 
+
+• Serve your Django project through Asynchronous Server Gateway Interface (ASGI)
+• Add Channels to your project
+• Build a WebSocket consumer and appropriate routing
+• Implement a WebSocket client
+• Enable a channel layer with Redis
+• Make your consumer fully asynchronous
 ```
 
 ## Sample screenshot of working application#

@@ -39,6 +39,7 @@ INTERNAL_IPS = [
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
     # local,
     "courses.apps.CoursesConfig",
     "students.apps.StudentsConfig",
+    "chat.apps.ChatConfig",
     # 3rd party,
     "embed_video",
     "debug_toolbar",
@@ -86,7 +88,18 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "elearning.wsgi.application"
+# Channels
+ASGI_APPLICATION = "elearning.asgi.application"
+
+# WSGI_APPLICATION = "elearning.wsgi.application"
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("127.0.0.1", 6379)],
+        },
+    },
+}
 
 
 # Django Rest Framework
@@ -175,7 +188,6 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # after successful student login
 LOGIN_REDIRECT_URL = reverse_lazy("student_course_list")
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

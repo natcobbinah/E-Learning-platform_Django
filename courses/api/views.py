@@ -53,10 +53,10 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet):
 
     @action(
         detail=True,
-        methods=['get'],
+        methods=["get"],
         serializer_class=CourseWithContentSerializer,
         authentication_classes=[BasicAuthentication],
-        permission_classes=[IsAuthenticated, IsEnrolled]
+        permission_classes=[IsAuthenticated, IsEnrolled],
     )
     def contents(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
