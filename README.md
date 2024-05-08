@@ -82,3 +82,7 @@ Subject list view
 Subject detail view
 ![subject detail view](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/ce192921-476f-4ef0-a832-a88677befd85)
 
+CHAT SERVER
+Inbuilt Chat-server to enable communication between students enrolled on the same course using Channels channel layer and Redis
+![context added to messages](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/a0ef337b-d239-4d85-b4b0-aa732456a2bf)
+
