@@ -40,6 +40,18 @@ An e-learning platform with its own content management system (CMS).
 • Implement a WebSocket client
 • Enable a channel layer with Redis
 • Make your consumer fully asynchronous
+
+• Configuring Django settings for multiple environments...in progress
+• Using Docker Compose to run multiple services...in progress
+• Setting up a web server with uWSGI and Django...in progress
+• Serving PostgreSQL and Redis with Docker Compose...in progress
+• Using the Django system check framework...in progress
+• Serving NGINX with Docker...in progress
+• Serving static assets through NGINX...in progress
+• Securing connections through TLS/SSL...in progress
+• Using the Daphne ASGI server for Django Channels...in progress
+• Creating a custom Django middleware...in progress
+• Implementing custom Django management commands...in progress
 ```
 
 ## Sample screenshot of working application#
