@@ -98,3 +98,13 @@ CHAT SERVER
 Inbuilt Chat-server to enable communication between students enrolled on the same course using Channels channel layer and Redis
 ![context added to messages](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/a0ef337b-d239-4d85-b4b0-aa732456a2bf)
 
+DOCKER CONTAINERIZATION
+![running containers](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/eec7377e-1ca1-409f-a45b-1d487bf9f52d)
+
+![homepage accessed from container](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/68180acb-bd42-42b8-aa79-0ec9ef79470b)
+
+NGINX TLS/SSL
+![NGINX using SSL_TLS](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/7b017e65-b7bd-4107-a9ac-e45da05feb6f)
+
+
+
