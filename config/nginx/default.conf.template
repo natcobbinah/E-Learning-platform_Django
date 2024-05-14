@@ -3,12 +3,25 @@ upstream uwsgi_app {
     server unix:/app/uwsgi_app.sock;
 }
 server {
-    listen       80;
-    server_name  www.elearningproject.com elearningproject.com;
-    error_log    stderr warn;
-    access_log   /dev/stdout main;
+    listen              80;
+    server_name         www.elearningproject.com elearningproject.com;
+    return 301 https://$host$request_uri;
+}
+server {
+    listen              443 ssl;
+    ssl_certificate     /app/ssl/elearning.crt; 
+    ssl_certificate_key /app/ssl/elearning.key;
+    server_name         www.elearningproject.com elearningproject.com;
+    error_log           stderr warn;
+    access_log          /dev/stdout main;
     location / {
-        include      /etc/nginx/uwsgi_params;
-        uwsgi_pass   uwsgi_app;
+        include         /etc/nginx/uwsgi_params;
+        uwsgi_pass      uwsgi_app;
+    }
+    location /static/ {
+        alias           /app/static/;
+    }
+    location /media/ {
+        alias           /app/media/;
     }
 }
