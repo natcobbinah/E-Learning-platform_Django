@@ -2,21 +2,32 @@
 upstream uwsgi_app {
     server unix:/app/uwsgi_app.sock;
 }
+# upstream for daphne 
+upstream daphne{
+    server unix:/app/daphne.sock;
+}
 server {
     listen              80;
-    server_name         www.elearningproject.com elearningproject.com;
+    server_name         *.elearningproject.com elearningproject.com;
     return 301 https://$host$request_uri;
 }
 server {
     listen              443 ssl;
     ssl_certificate     /app/ssl/elearning.crt; 
     ssl_certificate_key /app/ssl/elearning.key;
-    server_name         www.elearningproject.com elearningproject.com;
+    server_name         *.elearningproject.com elearningproject.com;
     error_log           stderr warn;
     access_log          /dev/stdout main;
     location / {
         include         /etc/nginx/uwsgi_params;
         uwsgi_pass      uwsgi_app;
+    }
+    location /ws/ {
+        proxy_http_version    1.1;
+        proxy_set_header      Upgrade $http_upgrade;
+        proxy_set_header      Connection "upgrade";
+        proxy_redirect        off; 
+        proxy_pass            http://daphne;
     }
     location /static/ {
         alias           /app/static/;

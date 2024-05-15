@@ -9,7 +9,7 @@ env.read_env()
 ADMINS = [
     (env.str("ADMIN_NAME"), env.str("ADMIN_EMAIL")),
 ]
-ALLOWED_HOSTS = ['elearningproject.com','www.elearningproject.com']
+ALLOWED_HOSTS = ['.elearningproject.com'] #. indicates  a subdomain wildcard
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
