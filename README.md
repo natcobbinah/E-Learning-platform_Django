@@ -111,7 +111,8 @@ WEBSOCKET SECURED (wss://) test with daphne
 ![websocket secured demo using daphne behind nginx](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/345c9a86-eb6d-4a8f-886a-a1adb9b37f8d)
 
 CUSTOM SUBDOMAIN CONFIGURATION IN SYSTEM
-![configuring test subdomain](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/f004f3c0-dfea-40c0-872c-c7c196e62398)
+![config test subdomain](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/6b7f5c6f-6c81-4024-9ba6-d0661a6075d9)
+
 
 
 
