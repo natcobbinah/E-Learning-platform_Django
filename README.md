@@ -99,12 +99,20 @@ Inbuilt Chat-server to enable communication between students enrolled on the sam
 ![context added to messages](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/a0ef337b-d239-4d85-b4b0-aa732456a2bf)
 
 DOCKER CONTAINERIZATION
-![running containers](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/eec7377e-1ca1-409f-a45b-1d487bf9f52d)
+![running containers new](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/0fc1c10c-2e6a-4768-8ec5-a504b73fff73)
+
 
 ![homepage accessed from container](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/68180acb-bd42-42b8-aa79-0ec9ef79470b)
 
 NGINX TLS/SSL
 ![NGINX using SSL_TLS](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/7b017e65-b7bd-4107-a9ac-e45da05feb6f)
+
+WEBSOCKET SECURED (wss://) test with daphne
+![websocket secured demo using daphne behind nginx](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/345c9a86-eb6d-4a8f-886a-a1adb9b37f8d)
+
+CUSTOM SUBDOMAIN CONFIGURATION IN SYSTEM
+![configuring test subdomain](https://github.com/natcobbinah/E-Learning-platform_Django/assets/10479361/f004f3c0-dfea-40c0-872c-c7c196e62398)
+
 
 
 
